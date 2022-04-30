@@ -19,15 +19,12 @@ https
       const fecha = body[indicador_economico].fecha
       const mivalor = body[indicador_economico].valor
       const total_convertido = (cantidad / mivalor).toFixed(2)
-      const mensaje  = `A la fecha: ${fecha} La cotizacion fue realizada con los siguientes datos: 
+      const mensaje = `A la fecha: ${fecha} La cotizacion fue realizada con los siguientes datos: 
 Cantidad de pesos a convertir: ${cantidad} pesos Convertido a "${indicador_economico}" da un total de: $${total_convertido}`
       //Creacion de archivo
-      fs.writeFile(
-        `${nombre_archivo}.${extension_archivo}`, mensaje,
-        () => {
-          console.log(mensaje)
-        }
-      )
+      fs.writeFile(`${nombre_archivo}.${extension_archivo}`, mensaje, () => {
+        console.log(mensaje)
+      })
       // Fin Creacion de archivo
     })
   })
