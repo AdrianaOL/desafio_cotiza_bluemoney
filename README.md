@@ -1,4 +1,4 @@
-## Desafio Cotiza Con BlueMoney📋
+## Prueba Cotiza Con BlueMoney📋
 - Para ejecutar el código se debe instalar un servidor de base de datos.
 - [POSTGRESQL] (https://www.postgresql.org/download/)
 - Abrir la consola de postgresql (SQL Shell-para Windows)
